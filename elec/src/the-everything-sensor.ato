@@ -1,2 +1,26 @@
+import BME280 from "bme280/elec/src/bme280.ato"
+import LIS2DH12TR from "lis2dh12tr/elec/src/lis2dh12tr.ato"
+import TMC2209 from "tmc2209/elec/src/tmc2209.ato"
+import HX711 from "hx711/elec/src/hx711.ato"
+import ATGM336H_5N31 from "atgm336h-5n31/elec/src/atgm336h-5n31.ato"
+import SGP40_D_R4 from "sgp40-d-r4/elec/src/sgp40-d-r4.ato"
+import MAX31856MUDT from "max31856mudt/elec/src/max31856mudt.ato"
+import ESP32S3 from "esp32-s3/esp32-s3.ato"
+import RP2040 from "rp2040/rp2040.ato"
+import LV2842Kit from "lv2842xlvddcr/lv2842kit.ato"
+import USBCConn from "usb-connectors/usb-connectors.ato"
+
 module TheEverythingSensor:
-    signal gnd
+    bme280 = new BME280
+    lis2dh12tr = new LIS2DH12TR
+    tmc2209 = new TMC2209
+    hx711 = new HX711
+    atgm336h_5n31 = new ATGM336H_5N31
+    sgp40_d_r4 = new SGP40_D_R4
+    max31856mudt = new MAX31856MUDT
+
+    buck = new LV2842Kit
+    esp32 = new ESP32S3
+    rp2040 = new RP2040
+    usb_c = new USBCConn
+

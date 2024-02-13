@@ -4,3 +4,8 @@ builds:
     entry: elec/src/the-everything-sensor.ato:TheEverythingSensor
 dependencies:
 - generics
+- rp2040^v4.0.0
+- esp32-s3
+- saleae-header
+- lv2842xlvddcr
+- usb-connectors^v2.0.1
