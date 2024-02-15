@@ -1,0 +1,11 @@
+component DB128V_5_08_4P_GN_S:
+    # component DB128V-5.08-4P-GN-S
+    footprint = "CONN-TH_4P-P5.08_DIBO_DB128V-5.08"
+    lcsc_id = "C2915641"
+    mpn = "C2915641"
+    # pins
+    signal _1 ~ pin 1
+    signal _2 ~ pin 2
+    signal _3 ~ pin 3
+    signal _4 ~ pin 4
+

@@ -9,3 +9,4 @@ dependencies:
 - saleae-header
 - lv2842xlvddcr
 - usb-connectors^v2.0.1
+- https://github.com/napowderly/xt-connectors

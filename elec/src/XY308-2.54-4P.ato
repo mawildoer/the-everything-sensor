@@ -1,0 +1,11 @@
+component XY308_2_54_4P:
+    # component XY308-2.54-4P
+    footprint = "CONN-TH_XY308-2.54-4P"
+    lcsc_id = "C915913"
+    mpn = "C915913"
+    # pins
+    signal _1 ~ pin 1
+    signal _2 ~ pin 2
+    signal _3 ~ pin 3
+    signal _4 ~ pin 4
+

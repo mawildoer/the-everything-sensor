@@ -1,0 +1,9 @@
+component WJ500V_5_08_2P_14_00A:
+    # component WJ500V-5.08-2P-14-00A
+    footprint = "CONN-TH_2P-P5.00_WJ500V-5.08-2P"
+    lcsc_id = "C8465"
+    mpn = "C8465"
+    # pins
+    signal _1 ~ pin 1
+    signal _2 ~ pin 2
+
