@@ -13,6 +13,7 @@ import TCA9548APWR from "tca9548apwr/elec/src/tca9548apwr.ato"
 import LDK220M_R_3V3 from "ldk220m-r/elec/src/ldk220m-r.ato"
 import SaleaeHeader from "saleae-header/saleae-header.ato"
 import TF_01A from "tf-01a/elec/src/tf-01a.ato"
+import XT30_Male_Right_Angle from "xt-connectors/xt-connectors.ato"
 
 import LEDIndicatorGreen from "generics/leds.ato"
 import LEDIndicatorRed from "generics/leds.ato"
@@ -22,7 +23,6 @@ import I2C from "generics/interfaces.ato"
 import SPI from "generics/interfaces.ato"
 import Resistor from "generics/resistors.ato"
 
-import XT30_Male_Right_Angle from "xt-connectors/xt-connectors.ato"
 import XY308_2_54_4P from "XY308-2.54-4P.ato"
 import DB125_2_54_2P_GN from "DB125-2.54-2P-GN.ato"
 import DB128V_5_08_4P_GN_S from "DB128V-5.08-4P-GN-S.ato"
@@ -153,6 +153,8 @@ module TheEverythingSensor:
     # xt30 input for power
     tmc2209.step_dir.dir ~ micros.rp2040.gpio0
     tmc2209.step_dir.step ~ micros.rp2040.gpio1
+
+    tmc2209.enable.io ~ micros.rp2040.gpio2
 
     # saleae header - stepper motor + power rails
     saleae_header_stepper_motor = new SaleaeHeader
