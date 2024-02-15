@@ -9,6 +9,7 @@ dependencies:
 - saleae-header
 - lv2842xlvddcr
 - usb-connectors^v2.0.1
+- programming-headers
 - bme280
 - lis2dh12tr
 - tmc2209
