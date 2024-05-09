@@ -19,3 +19,11 @@ A collective dev board for all the things our hearts desired.
 ## Getting Started
 
 The `firmware` directory uses PlatformIO to support multiple build configurations, with different scripts to test different sensors.
+
+
+## Known Bugs
+
+### `1987a17`
+
+- The `RP2040` USB balance resistors, meant to be `27Ω`, are actually `27kΩ`. This is fixed in the dependency for later builds
+- The `TCA9548APWR` reset isn't tied high. This is fixed in the dependency for later builds
