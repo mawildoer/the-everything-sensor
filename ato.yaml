@@ -5,7 +5,7 @@ builds:
 dependencies:
 - generics
 - rp2040^v4.0.0
-- esp32-s3
+- esp32-s3@8c0a875a193831bbea05ca7a256e81c2b5388186
 - saleae-header
 - lv2842xlvddcr
 - usb-connectors^v2.0.1
